@@ -1,0 +1,22 @@
+version: "2"
+services:
+  influxdb:
+    image: influxdb:latest
+    ports:
+      - "8086:8086"
+    environment:
+      - INFLUXDB_DB=db0
+      - INFLUXDB_USER=user
+      - INFLUXDB_USER_PASSWORD=pass
+    volumes:
+      - ./conf/volumes/influxdb:/var/lib/influxdb/data
+  influxdb_proxy:
+    image: influxdb_redash_proxy
+    ports:
+      - "5052:5052"
+    env_file:
+      - ./docker/.env
+    depends_on:
+      - influxdb
+    links:
+      - "influxdb:influxdb"

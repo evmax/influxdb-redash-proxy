@@ -1,0 +1,4 @@
+# coding: utf-8
+# Зависимости проекта для production
+
+gunicorn>=19.6.0,<19.7

@@ -1,0 +1,5 @@
+# coding: utf-8
+# Итоговые зависимости проекта для production
+
+-r _base.txt
+-r _prod.txt

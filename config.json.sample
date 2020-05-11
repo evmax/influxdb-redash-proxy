@@ -1,0 +1,13 @@
+{
+    "SECRET_KEY": "SOME-SECRET-KEY-FOR-APP",
+    "DEBUG": true,
+    "LOG_PATH": "/path/to/logs",
+    "AUTH_USER": "user",
+    "AUTH_PASS": "pass",
+    "DB_HOST": "127.0.0.1",
+    "DB_PORT": 8086,
+    "DB_NAME": "db0",
+    "DB_USER": "user",
+    "DB_PASS": "pass",
+    "REQUEST_PARSING_RULES": "measurement:alert.name, fields:alert.description, tags.last_triggered_at:alert.last_triggered_at, tags.query_id:alert.query_id"
+}

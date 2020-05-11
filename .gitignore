@@ -1,0 +1,46 @@
+# dev specific
+**/.idea/*
+.codeintel/*
+.ropeproject
+.project
+.pydevproject
+.settings
+.coverage
+.directory
+*.iml
+venv/
+.vscode/
+conf/
+
+*.orig
+*.zip
+*.old
+*.tmp
+*.tags
+*.tags_sorted_by_file
+*.metadata
+
+
+# python specific
+*.pyc
+# python specific
+*.pyc
+__pycache__/
+
+# setuptools specific
+.eggs
+dist
+src/echo.egg-info
+
+## generic files to ignore
+*~
+*.lock
+*.DS_Store
+*.swp
+*.out
+
+# Local SSH credentials
+.ssh/*
+
+# pytest results
+.cache/
